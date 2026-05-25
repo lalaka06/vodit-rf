@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #007BFF;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #007BFF;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+    padding: 5px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    background-color: #FFFFFF;
+    color: #007BFF;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: #007BFF;
+}
+
+.container {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 400px;
+}
+
+.container.reg {
+    border-top: 4px dashed #007BFF;
+    border-bottom: 4px dashed #4CCFE0;
+}
+
+.container.log {
+    border-top: 5px solid #4CCFE0;
+    border-bottom: 5px solid #007BFF;
+}
+
+.container.log h2 {
+    text-align: right;
+}
+
+/* Поля ввода */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #6C757D;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6C757D;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th {
+    background: #007BFF;
+    color: #FFFFFF;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.transport-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Навигация */
+.nav {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: #28A745;
+    text-decoration: underline;
+}
+
+/* Обычные ссылки */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #28A745;
+    text-decoration: underline;
+}
+
+/* Вспомогательный текст */
+small, .helper-text, .note {
+    font-size: 12px;
+    font-weight: 300;
+    color: #6C757D;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Кнопки внутри форм */
+form button {
+    margin-top: 5px;
+}
+
+
+.bg-blue {
+    background: #007BFF;
+}
+
+.bg-turquoise {
+    background: #4CCFE0;
+}
+
+.bg-green {
+    background: #28A745;
+}
+
+.bg-gray {
+    background: #6C757D;
+}
+
+.text-blue {
+    color: #007BFF;
+}
+
+.text-turquoise {
+    color: #4CCFE0;
+}
+
+.text-green {
+    color: #28A745;
+}
+
+.text-gray {
+    color: #6C757D;
+}
+
+.status-new {
+    color: #007BFF;
+    font-weight: 500;
+}
+
+.status-learning {
+    color: #4CCFE0;
+    font-weight: 500;
+}
+
+.status-completed {
+    color: #28A745;
+    font-weight: 500;
+}
